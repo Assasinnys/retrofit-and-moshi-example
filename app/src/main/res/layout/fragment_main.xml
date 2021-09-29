@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.myapplication.ui.main.MainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="530dp"
+            android:contentDescription="@string/accessibility_login_area"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_login_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/ic_logo_login"
+            android:contentDescription="@string/accessibility_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/username"
+            android:textAppearance="@style/usernamePassword"
+            app:layout_constraintStart_toStartOf="@+id/editText"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_edittext_background"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@={viewModel.username}"
+            android:hint="@string/add_username"
+            android:textColor="#C4C4C4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userNameTextView" />
+
+        <TextView
+            android:id="@+id/passwordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/password"
+            android:textAppearance="@style/usernamePassword"
+            app:layout_constraintStart_toStartOf="@id/passwordField"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_edittext_background"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@={viewModel.password}"
+            android:hint="@string/add_password"
+            android:inputType="textPassword"
+            android:textColor="#C4C4C4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordTextView" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/usernamePassword"
+            android:text="@string/login"
+            android:onClick="@{() -> viewModel.onLoginButtonClick()}"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/yello_main"
+            android:paddingVertical="10dp"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="55dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordField" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

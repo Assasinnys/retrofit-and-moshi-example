@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Registration App</string>
+    <string name="username">Username</string>
+    <string name="add_username">Add your username</string>
+    <string name="password">Password</string>
+    <string name="add_password">Add your password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+
+    <string name="accessibility_login_area">Login Area</string>
+    <string name="accessibility_logo">logo</string>
+</resources>
