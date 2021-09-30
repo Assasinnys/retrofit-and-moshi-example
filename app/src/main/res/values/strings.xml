@@ -9,4 +9,10 @@
 
     <string name="accessibility_login_area">Login Area</string>
     <string name="accessibility_logo">logo</string>
+
+    <string name="registration_form">Registration form</string>
+    <string name="email">Email</string>
+    <string name="add_email">Add your email</string>
+    <string name="confirm_password">Confirm the password</string>
+    <string name="register_now">Register now</string>
 </resources>
