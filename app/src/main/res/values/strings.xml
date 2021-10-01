@@ -23,5 +23,6 @@
     <string name="my_library">My library</string>
     <string name="share_app">Share app</string>
     <string name="log_out">Log out</string>
+    <string name="go_back_home">Go back home</string>
 
 </resources>
