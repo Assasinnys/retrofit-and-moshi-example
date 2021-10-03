@@ -9,4 +9,20 @@
 
     <string name="accessibility_login_area">Login Area</string>
     <string name="accessibility_logo">logo</string>
+
+    <string name="registration_form">Registration form</string>
+    <string name="email">Email</string>
+    <string name="add_email">Add your email</string>
+    <string name="confirm_password">Confirm the password</string>
+    <string name="register_now">Register now</string>
+    
+    <string name="every_day_is_">Every day is</string>
+    <string name="sun">Sun</string>
+    <string name="day">day</string>
+    <string name="generate_random_picture">Generate random picture</string>
+    <string name="my_library">My library</string>
+    <string name="share_app">Share app</string>
+    <string name="log_out">Log out</string>
+    <string name="go_back_home">Go back home</string>
+
 </resources>
